@@ -1,0 +1,194 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300;1,400;1,500;1,700&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right,#8360c3,#2bef91);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    
+
+}
+
+.login-card{
+    width: 250px;
+    height: 490px;
+    background: #accabb;
+    padding: 4rem;
+    border-radius: 1.25em;
+    position: relative;
+}
+.login-card-header{
+    font-size: 15px;
+    font-family: i;
+}
+
+.login-card-form,.login-card-fo{
+    font-size: 15px;
+    font-family: initial;
+    color: #4e7562;
+}
+.login-card a {
+    text-decoration: none;
+}
+.login-card a:hover {
+    text-decoration: underline;
+    color: rgb(236, 122, 144);
+}
+.login-card-header{
+    margin-bottom: 35px;
+}
+
+.logo-meta,.login-card-header,.login-card-logo{
+    text-align: center;
+}
+.login-card-logo{
+    font-size: 100px;
+}
+.login-card-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.login-card-form .form-item{
+    position: relative;
+}
+
+.login-card-form .form-item .form-item-icon{
+    position: absolute;
+    top: .52em;
+    left: 1.4rem;
+    font-size: 1.2rem;
+    color: #4e7562;
+}
+
+.login-card-form .form-item .label{
+    position: absolute;
+    left: 50px;
+    top: 14px;
+    pointer-events: none;
+    font-size: 14px;
+    transition: .5s;
+
+}
+.login-card-form .ccheckbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+.login-card-form .form-item-other{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem*.8);
+    margin-bottom: .5rem;
+}
+
+.login-card-fo{
+    margin-top: 1.5rem;
+    font-size: calc(1rem*.8);
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"]{
+    border: none;
+    outline: none;
+    background-color: #c7c7cf;
+    padding: 12px 0.25rem;
+    padding-left: calc(1rem*3.5);
+    width: 80%;
+    border-radius: 1.5rem;
+}
+
+.login-card input[type="text"]:valid,
+.login-card input[type="password"]:valid,
+.login-card input[type="text"]:focus,
+.login-card input[type="password"]:focus{
+    background-color: #fdfdfd;
+
+}
+
+.login-card input[type="text"]:valid ~ .label,
+.login-card input[type="password"]:valid ~ .label,
+.login-card input[type="text"]:focus ~ .label,
+.login-card input[type="password"]:focus ~ .label{
+    color: #8360c3;
+    transform: translate(10px,-10px);
+    font-size: .8em;
+    margin-left: -2rem;
+    top: -6px;
+
+}
+
+.login-card-form button {
+    background: linear-gradient(to right,#131e42,#1a2f38);
+    border: none;
+    color: #fdfdfd;
+    padding: 1rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+}   
+
+.login-card-form button:hover{
+    background-color: #20367e;
+    cursor: pointer;
+}
+
+.login-card-fo{
+    text-align: center;
+}
+
+.login-card-so{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 1.2em;
+}
+
+.login-card-so > div {
+    opacity: .8;
+    letter-spacing: 1px;
+    font-size: calc(1.rem*.8);
+}
+
+.login-card-so-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: calc(1.5rem*.8);
+}
+.login-card-so-btn a {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255,.7);
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    transition: all .5s;
+}
+
+.facebook-logo {
+    background: linear-gradient(to right ,#002bff,#4415d3bf);
+}
+.instagram-logo {
+    background: linear-gradient(to right ,#833ab4,#fd1d);
+}
+.twitter-logo {
+    background: linear-gradient(to right ,#2193b0,#6dd5ed);
+}
+
+.login-card-so-btn  a:hover {
+    transform: scale(1.1);
+    opacity: .8;
+}
